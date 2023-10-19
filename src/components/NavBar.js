@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.svg"
+import logo from "../images/logo.svg"
 import "../styles/navbar.css"
 
 function NavBar () {
@@ -7,12 +7,12 @@ function NavBar () {
         <nav>
             <div className="Nav-logo">
                 <img src = {logo} alt="Brand Logo" />
+                <h3>ReactFacts</h3>
             </div>
-            <ul className="Nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div className="Nav-right">
+                <h4>React Course - Project 1</h4>
+            </div>
+           
         </nav>
     )
 }
