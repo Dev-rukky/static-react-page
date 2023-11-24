@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/main.css";
 
-function MainContent() {
+const MainContent = (props) => {
     return (
-        <main>
+        <main className={props.darkMode ? "dark" : ""}>
             <h1 className="main-heading">Fun facts about React</h1>
             <ul className="main-facts">
                 <li>Was first released in 2013</li>
